@@ -117,4 +117,4 @@ Worth knowing before you rely on it:
 
 ## License
 
-AGPL-3.0-only
+GPL-3.0-only

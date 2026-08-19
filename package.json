@@ -31,7 +31,7 @@
     "cross-session",
     "multi-agent"
   ],
-  "license": "AGPL-3.0-only",
+  "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheArctesian/opencode-cross-session-messaging.git"
