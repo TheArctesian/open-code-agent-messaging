@@ -218,9 +218,8 @@ export const CrossSessionMessaging: Plugin = async (ctx) => {
 }
 
 export default CrossSessionMessaging
-export { Registry, deriveName } from "./registry.js"
-export { baseDir, registryDir, inboxDir } from "./paths.js"
-export { deliver, envelope, MAX_MESSAGE_CHARS } from "./transport.js"
-export { Throttle } from "./guards.js"
-export { Inbox, MAX_HELD } from "./inbox.js"
-export type { AgentRecord, Inbound, Status, Resolution } from "./registry.js"
+
+// Nothing else is exported from the entry point on purpose. opencode calls every
+// exported function of a plugin package as a plugin factory, so re-exporting
+// classes or helpers here breaks loading. Internals are imported from their own
+// modules by the tests.
