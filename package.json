@@ -1,5 +1,5 @@
 {
-  "name": "opencode-cross-session-messaging",
+  "name": "opencode-agent-messaging",
   "version": "0.2.0",
   "description": "Let one opencode session discover and message another on the same machine, the way Claude Code's cross-session messaging works.",
   "type": "module",

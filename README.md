@@ -1,4 +1,6 @@
-# opencode-cross-session-messaging
+# opencode-agent-messaging
+
+> Published on npm as `opencode-agent-messaging`. The repository keeps its longer name.
 
 Let one [opencode](https://opencode.ai) session discover and message another on the same machine.
 
@@ -43,7 +45,7 @@ The receiving session's own permission rules still apply to anything it decides 
 // opencode.json
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["opencode-cross-session-messaging"]
+  "plugin": ["opencode-agent-messaging"]
 }
 ```
 
