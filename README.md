@@ -72,14 +72,14 @@ Requires opencode 1.18 or later, on macOS or Linux.
 opencode only auto-loads files at the **top level** of its plugins directory, so clone the repo there and add a one-line loader beside it:
 
 ```sh
-git clone https://github.com/TheArctesian/opencode-cross-session-messaging.git \
-  ~/.config/opencode/plugins/opencode-cross-session-messaging
-cd ~/.config/opencode/plugins/opencode-cross-session-messaging && bun install
+git clone https://github.com/TheArctesian/opencode-agent-messaging.git \
+  ~/.config/opencode/plugins/opencode-agent-messaging
+cd ~/.config/opencode/plugins/opencode-agent-messaging && bun install
 ```
 
 ```ts
 // ~/.config/opencode/plugins/cross-session-messaging.ts
-export { CrossSessionMessaging } from "./opencode-cross-session-messaging/src/index.js"
+export { CrossSessionMessaging } from "./opencode-agent-messaging/src/index.js"
 ```
 
 ```sh

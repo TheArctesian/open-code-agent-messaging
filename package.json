@@ -34,12 +34,12 @@
   "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheArctesian/opencode-cross-session-messaging.git"
+    "url": "git+https://github.com/TheArctesian/opencode-agent-messaging.git"
   },
   "bugs": {
-    "url": "https://github.com/TheArctesian/opencode-cross-session-messaging/issues"
+    "url": "https://github.com/TheArctesian/opencode-agent-messaging/issues"
   },
-  "homepage": "https://github.com/TheArctesian/opencode-cross-session-messaging#readme",
+  "homepage": "https://github.com/TheArctesian/opencode-agent-messaging#readme",
   "peerDependencies": {
     "@opencode-ai/plugin": "*"
   },
