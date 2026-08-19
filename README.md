@@ -1,7 +1,5 @@
 # opencode-agent-messaging
 
-> Published on npm as `opencode-agent-messaging`. The repository keeps its longer name.
-
 Let one [opencode](https://opencode.ai) session discover and message another on the same machine.
 
 This is an implementation of [Claude Code's cross-session messaging](https://code.claude.com/docs/en/cross-session-messaging) for opencode. When a change in one session breaks what another is building on, that session can warn it before you notice. When one session settles a question another is blocked on, it can send the answer across, instead of you copy-pasting between terminals.
@@ -41,15 +39,33 @@ The receiving session's own permission rules still apply to anything it decides 
 
 ## Install
 
+Published on npm as [`opencode-agent-messaging`](https://www.npmjs.com/package/opencode-agent-messaging).
+
+One command, which installs the plugin and adds it to your config:
+
+```sh
+opencode plugin opencode-agent-messaging
+```
+
+Or add it yourself. opencode installs the package from npm on the next start, so there is no separate `npm install` step:
+
 ```jsonc
-// opencode.json
+// opencode.json  — project, or ~/.config/opencode/opencode.json for every project
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": ["opencode-agent-messaging"]
 }
 ```
 
-Start two or more opencode sessions, and they can reach each other.
+Pin a version if you prefer:
+
+```jsonc
+{ "plugin": ["opencode-agent-messaging@0.2.1"] }
+```
+
+Then start two or more opencode sessions and they can reach each other. To confirm it loaded, ask a session to list the agents it can reach; it should name your other session.
+
+Requires opencode 1.18 or later, on macOS or Linux.
 
 ### Local development
 
@@ -67,7 +83,7 @@ export { CrossSessionMessaging } from "./opencode-cross-session-messaging/src/in
 ```
 
 ```sh
-bun test        # 63 tests
+bun test        # 66 tests
 bun run typecheck
 bun run build
 ```
@@ -119,4 +135,4 @@ Worth knowing before you rely on it:
 
 ## License
 
-GPL-3.0-only
+GPL-3.0
