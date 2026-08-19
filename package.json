@@ -1,7 +1,7 @@
 {
-  "name": "opencode-agent-messaging",
-  "version": "0.1.0",
-  "description": "Keep parallel opencode sessions in the same worktree up to date with each other's code changes.",
+  "name": "opencode-cross-session-messaging",
+  "version": "0.2.0",
+  "description": "Let one opencode session discover and message another on the same machine, the way Claude Code's cross-session messaging works.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -28,18 +28,18 @@
     "plugin",
     "agent",
     "messaging",
-    "multi-agent",
-    "coordination"
+    "cross-session",
+    "multi-agent"
   ],
   "license": "AGPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheArctesian/open-code-agent-messaging.git"
+    "url": "git+https://github.com/TheArctesian/opencode-cross-session-messaging.git"
   },
   "bugs": {
-    "url": "https://github.com/TheArctesian/open-code-agent-messaging/issues"
+    "url": "https://github.com/TheArctesian/opencode-cross-session-messaging/issues"
   },
-  "homepage": "https://github.com/TheArctesian/open-code-agent-messaging#readme",
+  "homepage": "https://github.com/TheArctesian/opencode-cross-session-messaging#readme",
   "peerDependencies": {
     "@opencode-ai/plugin": "*"
   },
